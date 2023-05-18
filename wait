@@ -1,0 +1,19 @@
+https://www.seleniumeasy.com/selenium-tutorials/webdriver-wait-examples
+
+
+isElementPresent:
+WebDriverWait wait = new WebDriverWait(driver, waitTime);
+wait.until(ExpectedConditions.presenceOfElementLocated(locator)); 
+isElementClickable
+WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+wait.until(ExpectedConditions.elementToBeClickable(locator));
+======
+isElementVisible
+WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+ wait..until(ExpectedConditions.visibilityOf(element));
+ List<WebElement> linkElements = driver.findelements(By.cssSelector('#linkhello'));
+WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+ wait..until(ExpectedConditions.visibilityOfAllElements(linkElements));
